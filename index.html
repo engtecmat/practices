@@ -1,9 +1,98 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>TS - Basic Concepts</title>
-        <script src="./dest/index.js"></script>
-    </head>
-    <body>
-        Practice <br><br>
-    </body>
+
+<head>
+    <title>TS - Basic Concepts</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+        }
+
+        #main {
+            border: 2px solid red;
+            position: absolute;
+            width: 80em;
+            height: 50em;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        #question {
+            height: 10em;
+            font-size: 2em;
+            height: 10%;
+            padding-left: 2em;
+            text-align: left;
+        }
+
+        #option {
+            padding-left: 3.5em;
+            text-align: left;
+            font-size: 1.5em;
+            height: 80%;
+        }
+
+        .option {
+            height: 3em;
+        }
+
+        #button-group {
+            bottom: 2em;
+        }
+
+        #button-group input {
+            height: 3em;
+            width: 10em;
+        }
+
+        #previous {
+            margin-left: 4em;
+            float: left;
+        }
+
+        #next {
+            margin-right: 4em;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="question">1.What can you infer from the information presented above?</div>
+        <div id="option">
+            <div class="option">
+                <input type="radio" name="option"> A. Intense exercise uses more anaerobically metabolized energy than
+                light
+                exercise.
+            </div>
+            <div class="option">
+                <input type="radio" name="option"> B. Intense exercise uses more anaerobically metabolized energy than
+                light
+                exercise.
+            </div>
+            <div class="option">
+                <input type="radio" name="option"> C. Intense exercise uses more anaerobically metabolized energy than
+                light
+                exercise.
+            </div>
+            <div class="option">
+                <input type="radio" name="option"> D. Intense exercise uses more anaerobically metabolized energy than
+                light
+                exercise.
+            </div>
+        </div>
+        <div id="button-group">
+            <input type="button" id="previous" value="Previous">
+            <input type="button" value="Show Answer">
+            <input type="button" id="next" value="Next">
+        </div>
+    </div>
+</body>
+<script src="./dest/index.js"></script>
+
 </html>
