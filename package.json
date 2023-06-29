@@ -1,5 +1,9 @@
 {
+  "name": "practices",
+  "version": "1.0.0",
+  "description": "Practice",
   "devDependencies": {
+    "@types/node": "^20.3.2",
     "typescript": "^5.1.6"
   }
 }
