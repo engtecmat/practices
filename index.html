@@ -13,17 +13,32 @@
             border: 2px solid red;
             position: absolute;
             width: 80em;
-            height: 50em;
-            top: 50%;
+            height: auto;
+            /* top: 50%; */
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -0%);
             padding: 10px;
             background-color: #eee;
+            padding: 0;
+        }
+
+        #passage {
+            text-align: left;
+            padding-left: 2em;
+            font-size: 1.5em;
+        }
+
+        #illustration {
+            text-align: left;
+        }
+
+        #illustration img {
+            margin-left: 20em;
         }
 
         #question {
             height: 10em;
-            font-size: 2em;
+            font-size: 1.5em;
             height: 10%;
             padding-left: 2em;
             text-align: left;
@@ -32,12 +47,12 @@
         #option {
             padding-left: 3.5em;
             text-align: left;
-            font-size: 1.5em;
+            font-size: 1.2em;
             height: 50%;
         }
 
         .option {
-            height: 3em;
+            height: 2em;
         }
 
         #answer {
@@ -69,6 +84,20 @@
 
 <body>
     <div id="main">
+        <div id="passage">
+            Photosynthesis (from Greek phōs (φῶς), "light", and synthesis (σύνθεσις), "putting together"[1][2][3]) is a
+            biological process used by many cellular organisms to convert light energy into chemical energy, which is
+            stored in organic compounds that can later be metabolized through cellular respiration to fuel the
+            organism's activities. The term usually refers to oxygenic photosynthesis, where oxygen is produced as a
+            byproduct, and some of the chemical energy produced is stored in carbohydrate molecules such as sugars,
+            starch and cellulose, which are synthesized from endergonic reaction of carbon dioxide with water. Most
+            plants, algae and cyanobacteria perform photosynthesis; such organisms are called photoautotrophs.
+            Photosynthesis is largely responsible for producing and maintaining the oxygen content of the Earth's
+            atmosphere, and supplies most of the biological energy necessary for complex life on Earth.[4]
+        </div>
+        <div id="illustration">
+            <img src="./resources/Photosynthesis_en.svg" />
+        </div>
         <div id="question">1.What can you infer from the information presented above?</div>
         <div id="option">
             <div class="option">
