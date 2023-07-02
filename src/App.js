@@ -6,6 +6,14 @@ function showAnswer(answer, e) {
   document.getElementById("show-answer").value = e.target.value === "Show Answer" ? "Hide Answer" : "Show Answer";
 }
 
+function chooseAnswer(option, answer, e) {
+  if (option.symbol === answer) {
+    document.getElementById("answer").textContent = "Correct!";
+    return;
+  } 
+  document.getElementById("answer").textContent = "";
+}
+
 function App() {
   return (
     <div id="main" >
@@ -32,7 +40,7 @@ function App() {
           questions[0].options.map((option) => {
             return (
               <div class="option">
-                <input type="radio" name="option" /> {option.symbol}. {option.description}
+                <input type="radio" name="option" onClick={chooseAnswer.bind(this, option, questions[0].answer)} /> {option.symbol}. {option.description}
               </div>
             );
           })
@@ -47,22 +55,6 @@ function App() {
         <input type="button" id="next" value="Next" />
       </div>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
