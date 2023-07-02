@@ -1,6 +1,11 @@
 import questions from './resources/questions.json'
 import './App.css';
 
+function showAnswer(answer, e) {
+  document.getElementById("answer").textContent = e.target.value === "Show Answer" ? "The correct answer is " + answer + "." : " ";
+  document.getElementById("show-answer").value = e.target.value === "Show Answer" ? "Hide Answer" : "Show Answer";
+}
+
 function App() {
   return (
     <div id="main" >
@@ -34,11 +39,11 @@ function App() {
         }
       </div>
       <div id="answer">
-        The correct answer is {questions[0].answer}.
+
       </div>
       <div id="button-group">
         <input type="button" id="previous" value="Previous" />
-        <input type="button" value="Show Answer" />
+        <input type="button" id="show-answer" value="Show Answer" onClick={showAnswer.bind(this, questions[0].answer)} />
         <input type="button" id="next" value="Next" />
       </div>
     </div>
