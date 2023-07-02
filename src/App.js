@@ -8,7 +8,7 @@ function showAnswer(answer, e) {
 
 function chooseAnswer(option, answer, e) {
   if (option.symbol === answer) {
-    document.getElementById("answer").textContent = "Correct!";
+    document.getElementById("answer").textContent = "You're correct!";
     return;
   }
   document.getElementById("answer").textContent = "";
@@ -28,7 +28,7 @@ function App() {
           {
             questions[0].illustration.data.map((data) => {
               return (
-                <div style={{ fontWeight: data.type === "head" ? "bold" : "" }} >{data.value}</div>
+                <div style={{ fontWeight: data.type === "head" ? "bold" : "", backgroundColor: data.type === "head" ? "#ccc" : ""}} >{data.value}</div>
               );
             })
           }

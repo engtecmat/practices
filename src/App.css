@@ -30,37 +30,28 @@
 
 body {
   text-align: center;
-  background-color: black;
   font-family: 'Andika New Basic', sans-serif;
 }
 
 #main {
-  border: 2px solid red;
-  position: absolute;
-  width: 80em;
   height: auto;
-  /* top: 50%; */
-  left: 50%;
-  transform: translate(-50%, -0%);
-  padding: 10px;
-  background-color: #eee;
   padding: 0;
 }
 
 #prompt {
   text-align: left;
-  margin-top: 1em;
-  padding-left: 1em;
-  font-size: 1.5em;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 #passage {
   text-align: left;
-  padding-left: 2em;
-  font-size: 1.2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 30px;
+  padding-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 #illustration {
@@ -68,45 +59,42 @@ body {
 }
 
 #illustration img {
-  margin-left: 20em;
+  margin-left: 20px;
 }
 
 #question {
-  height: 10em;
-  font-size: 1.4em;
-  height: 10%;
-  padding-left: 2em;
+  font-size: 30px;
+  padding-left: 40px;
   text-align: left;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #option {
-  padding-left: 3.5em;
+  padding-left: 50px;
   text-align: left;
-  font-size: 1.1em;
-  height: 50%;
+  font-size: 25px;
 }
 
 .option {
-  height: 2em;
+  height: 50px;
 }
 
 #answer {
-  height: 30%;
-  font-size: 3em;
+  font-size: 30px;
   color: red;
 }
 
 #button-group {
-  bottom: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #button-group input {
-  height: 3em;
-  width: 10em;
+  font-size: 30px;
+  height: 80px;
+  width: 250px;
 }
 
 #previous {
@@ -120,15 +108,17 @@ body {
 }
 
 .grid-container {
+  width: 600px;
   display: grid;
   grid-template-columns: auto auto;
-  /* gap: 10px; */
-  padding: 10px;
+  gap: 1px;
+  padding-left: 200px;
 }
 
 .grid-container>div {
   border: 1px solid black;
-  font-size: 1.2em;
+  font-size: 17px;
+  padding-left: 5px;
 }
 
 @keyframes App-logo-spin {
