@@ -20,13 +20,13 @@ Business: purpose, business process, target customers, offerings, strategies, in
 ```json
  {
         "prompt": "The question refers to the following information.",
-        "passage": "Humans can hear sound-wave frequencies raning from about 20 Hz(20,000 kHz) to about 20,000 Hz. We experience a wave's frequency as \"pictch.\"",
+        "passage": "Humans can hear sound-wave frequencies ranging from about 20 Hz(20,000 kHz) to about 20,000 Hz. We experience a wave's frequency as \"pitch.\"",
         "illustration": {
             "type": "table",
             "data": [
                 {
                     "type": "head",
-                    "value": "Aminal"
+                    "value": "Animal"
                 },
                 {
                     "type": "head",
@@ -58,7 +58,7 @@ Business: purpose, business process, target customers, offerings, strategies, in
                 },
                 {
                     "type": "body",
-                    "value": "porposise"
+                    "value": "porpoise"
                 },
                 {
                     "type": "body",
