@@ -1,5 +1,6 @@
 [
     {
+        "prompt": "The question refers to the following information.",
         "passage": "",
         "illustration": {
             "type": "table",

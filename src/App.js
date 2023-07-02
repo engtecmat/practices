@@ -10,18 +10,20 @@ function chooseAnswer(option, answer, e) {
   if (option.symbol === answer) {
     document.getElementById("answer").textContent = "Correct!";
     return;
-  } 
+  }
   document.getElementById("answer").textContent = "";
 }
 
 function App() {
   return (
     <div id="main" >
+      <div id="prompt">
+        {questions[0].prompt}
+      </div>
       <div id="passage">
         {questions[0].passage}
       </div>
       <div id="illustration">
-        {/* <img src={questions[0].illustration} /> */}
         <div class="grid-container">
           {
             questions[0].illustration.data.map((data) => {
