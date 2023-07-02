@@ -17,6 +17,6 @@ Business: purpose, business process, target customers, offerings, strategies, in
 
 ### Question types
 
-Passage, Illustration, Single-line, Multi-line
+Passage, Illustration, Single-line, Multi-line, Table
 
 NONE, P, I, PP, II, PI, PPP, PII, PPI, PPII
