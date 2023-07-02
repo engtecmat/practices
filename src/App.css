@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -29,7 +27,6 @@
 }
 
 body {
-  text-align: center;
   font-family: 'Andika New Basic', sans-serif;
 }
 
@@ -81,6 +78,7 @@ body {
 }
 
 #answer {
+  padding: 0 50px 0 50px;
   font-size: 30px;
   color: red;
 }
@@ -89,6 +87,7 @@ body {
   bottom: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 #button-group input {

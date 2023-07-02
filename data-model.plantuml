@@ -26,6 +26,7 @@
                 "description": "A description"
             }
         ],
-        "answer": "A"
+        "answer": "A",
+        "explanation": "An explanation."
     }
 @endjson

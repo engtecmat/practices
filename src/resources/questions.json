@@ -82,6 +82,7 @@
                 "description": "Extend the range size to 200,000 kHz."
             }
         ],
-        "answer": "A"
+        "answer": "A",
+        "explanation": "The correct answer is A. The table shows that the lowest frequency that a porpoise can hear is higher than the lowest frequency that humans can hear, which is given as 20 Hz, or 20,000 kHz. So, by eliminating all sonar frequencies above 20,000 kHz, the sonar would no longer interfere with the ability of porpoises to hear other sounds, Choice B would place the sonar emission squarely in the porpoises' audible range, while changing the size of the range, choices C and D, would not matter if the sounds were still audible to a porpoise."
     }
 ]

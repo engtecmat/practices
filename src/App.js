@@ -1,8 +1,8 @@
 import questions from './resources/questions.json'
 import './App.css';
 
-function showAnswer(answer, e) {
-  document.getElementById("answer").textContent = e.target.value === "Show Answer" ? "The correct answer is " + answer + "." : " ";
+function showAnswer(question, e) {
+  document.getElementById("answer").textContent = e.target.value === "Show Answer" ? question.explanation : " ";
   document.getElementById("show-answer").value = e.target.value === "Show Answer" ? "Hide Answer" : "Show Answer";
 }
 
@@ -53,7 +53,7 @@ function App() {
       </div>
       <div id="button-group">
         <input type="button" id="previous" value="Previous" />
-        <input type="button" id="show-answer" value="Show Answer" onClick={showAnswer.bind(this, questions[0].answer)} />
+        <input type="button" id="show-answer" value="Show Answer" onClick={showAnswer.bind(this, questions[0])} />
         <input type="button" id="next" value="Next" />
       </div>
     </div>
