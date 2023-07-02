@@ -15,7 +15,99 @@ Business: purpose, business process, target customers, offerings, strategies, in
 
 ## Data Model
 
+### Question Data Model
+
+```json
+ {
+        "prompt": "The question refers to the following information.",
+        "passage": "Humans can hear sound-wave frequencies raning from about 20 Hz(20,000 kHz) to about 20,000 Hz. We experience a wave's frequency as \"pictch.\"",
+        "illustration": {
+            "type": "table",
+            "data": [
+                {
+                    "type": "head",
+                    "value": "Aminal"
+                },
+                {
+                    "type": "head",
+                    "value": "Range of Hearing (Hertz = 1 cycle/sec.)"
+                },
+                {
+                    "type": "body",
+                    "value": "dog"
+                },
+                {
+                    "type": "body",
+                    "value": "30 Hz - 30,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "cat"
+                },
+                {
+                    "type": "body",
+                    "value": "15 Hz - 40,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "bat"
+                },
+                {
+                    "type": "body",
+                    "value": "2000 Hz - 100,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "porposise"
+                },
+                {
+                    "type": "body",
+                    "value": "30 Hz - 150,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "elephant"
+                },
+                {
+                    "type": "body",
+                    "value": "3 Hz - 10,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "human"
+                },
+                {
+                    "type": "body",
+                    "value": "20 Hz - 20,1000 Hz"
+                }
+            ]
+        },
+        "question": "To monitor activities beneath the ocean surface, sonar devices used on navy ships emit sound waves with frequencies ranging from about 1,000 kHz to 100,000 kHz that are intense enough to interfere with the ability of porpoises to communicate and navigate. What refinement in the frequency range on the devices might remedy this problem?",
+        "options": [
+            {
+                "symbol": "A",
+                "description": "Reduce the upper range limit to 20,000 kHz."
+            },
+            {
+                "symbol": "B",
+                "description": "Raise the lower range limit to 50,000 kHz."
+            },
+            {
+                "symbol": "C",
+                "description": "Limit the range size to 10,000 kHz."
+            },
+            {
+                "symbol": "D",
+                "description": "Extend the range size to 200,000 kHz."
+            }
+        ],
+        "answer": "A"
+    }
+```
+
 ### Question types
+
+Type 1: A prompt, a passage, a table, a question and 4 options.
 
 Passage, Illustration, Single-line, Multi-line, Table
 

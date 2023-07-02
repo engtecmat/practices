@@ -1,0 +1,31 @@
+@startjson
+ {
+        "prompt": "A prompt",
+        "passage": "A passage",
+        "illustration": {
+            "type": "table",
+            "data": [
+                {
+                    "type": "head",
+                    "value": "Aminal"
+                },
+                {
+                    "type": "body",
+                    "value": "dog"
+                }
+            ]
+        },
+        "question": "A question?",
+        "options": [
+            {
+                "symbol": "A",
+                "description": "A description"
+            },
+            {
+                "symbol": "B",
+                "description": "A description"
+            }
+        ],
+        "answer": "A"
+    }
+@endjson
