@@ -1,45 +1,46 @@
 import logo from './logo.svg';
 import questions from './resources/questions.json'
-import aaaa from './resources/Photosynthesis_en.svg'
 import './App.css';
 
 function App() {
-
-
-
-
   return (
     <div id="main" >
       <div id="passage">
         {questions[0].passage}
-
       </div>
       <div id="illustration">
-        <img src={questions[0].illustration} />
+        {/* <img src={questions[0].illustration} /> */}
+        <div class="grid-container">
+          {
+            questions[0].illustration.data.map((data) => {
+              return (
+                <div style={{ fontWeight: data.type === "head" ? "bold" : "" }} >{data.value}</div>
+              );
+            })
+          }
+        </div>
       </div>
       <div id="question">
-        {questions[0].question}
+        1. {questions[0].question}
       </div>
       <div id="option">
         {
           questions[0].options.map((option) => {
             return (
               <div class="option">
-                <input type="radio" name="option" /> B. Intense exercise uses more anaerobically metabolized energy than
-                light
-                exercise.
+                <input type="radio" name="option" /> {option.symbol}. {option.description}
               </div>
             );
           })
         }
       </div>
       <div id="answer">
-        Correct!
+        The correct answer is {questions[0].answer}.
       </div>
       <div id="button-group">
         <input type="button" id="previous" value="Previous" />
         <input type="button" value="Show Answer" />
-        <input type="button" id="next" value="Next" />/
+        <input type="button" id="next" value="Next" />
       </div>
     </div>
     // <div className="App">

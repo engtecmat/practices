@@ -27,6 +27,7 @@
 .App-link {
   color: #61dafb;
 }
+
 body {
   text-align: center;
   background-color: black;
@@ -110,10 +111,23 @@ body {
   float: right;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* gap: 10px; */
+  padding: 10px;
+}
+
+.grid-container>div {
+  border: 1px solid black;
+  font-size: 1.2em;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

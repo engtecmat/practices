@@ -1,7 +1,67 @@
 [
     {
         "passage": "",
-        "illustration": "/images/Photosynthesis_en.svg",
+        "illustration": {
+            "type": "table",
+            "data": [
+                {
+                    "type": "head",
+                    "value": "Aminal"
+                },
+                {
+                    "type": "head",
+                    "value": "Range of Hearing (Hertz = 1 cycle/sec.)"
+                },
+                {
+                    "type": "body",
+                    "value": "dog"
+                },
+                {
+                    "type": "body",
+                    "value": "30 Hz - 30,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "cat"
+                },
+                {
+                    "type": "body",
+                    "value": "15 Hz - 40,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "bat"
+                },
+                {
+                    "type": "body",
+                    "value": "2000 Hz - 100,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "porposise"
+                },
+                {
+                    "type": "body",
+                    "value": "30 Hz - 150,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "elephant"
+                },
+                {
+                    "type": "body",
+                    "value": "3 Hz - 10,1000 Hz"
+                },
+                {
+                    "type": "body",
+                    "value": "human"
+                },
+                {
+                    "type": "body",
+                    "value": "20 Hz - 20,1000 Hz"
+                }
+            ]
+        },
         "question": "To monitor activities beneath the ocean surface, sonar devices used on navy ships emit sound waves with frequencies ranging from about 1,000 kHz to 100,000 kHz that are intense enough to interfere with the ability of porpoises to communicate and navigate. What refinement in the frequency range on the devices might remedy this problem?",
         "options": [
             {
