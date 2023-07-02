@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import questions from './resources/questions.json'
 import './App.css';
 
